@@ -8,10 +8,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "vue": "^3.2.45"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",
     "vite": "^3.2.4"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }
