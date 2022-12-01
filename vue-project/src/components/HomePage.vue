@@ -1,11 +1,17 @@
 <template>
   <div class="home-page">
     <div class="home-page__title">
-      <h1>PHodozer</h1>
+      <h1 @click="fun">PH</h1><p>odozer</p>
     </div>
     <div class="home-page__button">
       <a>Jouer</a>
     </div>
+    <div class="home-page__button connection">
+      <a>Connexion</a>
+    </div> 
+    <audio id="audio" controls style="visibility: hidden;">
+      <source src="../assets/sounds/pornhub.mp3" type="audio/mpeg" />
+    </audio>
   </div>
 
 </template>
@@ -14,7 +20,16 @@
 
 export default {
   name: 'HomePage',
+  methods: {
+    fun: function fun() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  }
+
 };
+
+
 
 </script>
 
@@ -31,15 +46,28 @@ export default {
   font-size: 5rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
 }
+
+.home-page__title h1 {
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  background-color: orange;
+  color: black;
+  margin-right: 10px;
+}
+
 
 .home-page__button a {
   padding: 20px;
   border-radius: 0.5rem;
   font-size: 30px;
-  background-color: rgb(0 189 126 / 0.5);
-  color: #fff;
+  background-color: orange;
+  color: black;
+  font-weight: 700;
 }
 
 .home-page__button {
@@ -50,7 +78,15 @@ export default {
 }
 
 .home-page__button a:hover {
-  background-color: rgb(0 189 126);
+  background-color: orange;
 
 }
+
+.home-page__button.connection {
+  position: absolute;
+  top: 50px;
+  right: 90px;
+}
+
+
 </style>
