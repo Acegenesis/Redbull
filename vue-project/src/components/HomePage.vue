@@ -4,7 +4,7 @@
       <h1 @click="fun">PH</h1><p>odozer</p>
     </div>
     <div class="home-page__button">
-      <a>Jouer</a>
+      <a @click="slide">Jouer</a>
     </div>
     <div class="home-page__button connection">
       <a>Connexion</a>
@@ -24,6 +24,9 @@ export default {
     fun: function fun() {
       var audio = document.getElementById("audio");
       audio.play();
+    },
+    slide: function slide() {
+      document.getElementById("app").style.transform = "translateX(-100vw)";
     }
   }
 
@@ -35,11 +38,13 @@ export default {
 
 <style>
 .home-page {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
 }
 
 .home-page__title {

@@ -18,6 +18,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  transition: transform 1s ease-in;
 }
 
 button {

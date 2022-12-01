@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "Jeux",
+  name: "JeuxPage",
 };
 </script>
 
@@ -22,6 +22,7 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
 }
 
 .jeux__title {

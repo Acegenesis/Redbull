@@ -4,8 +4,17 @@ import Jeux from "./components/Jeux.vue";
 </script>
 
 <template>
-  <HomePage />
-  <Jeux />
+  <div class="container">
+    <HomePage />
+    <Jeux />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200vw;
+}
+</style>

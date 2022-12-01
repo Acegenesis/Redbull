@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/cli-plugin-router": "~4.5.15",
     "vite": "^3.2.4"
   },
   "description": "This template should help get you started developing with Vue 3 in Vite.",
