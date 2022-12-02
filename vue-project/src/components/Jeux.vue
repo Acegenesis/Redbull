@@ -5,7 +5,7 @@
     <div class="circle3"></div>
     <div class="cards">
       <div class="items">
-        <p>Nice coock bro</p>
+        <p>Que signifie VIH ? </p>
       </div>
       <div class="items"></div>
       <div class="items"></div>
@@ -14,17 +14,18 @@
     </div>
     <div class="cards second">
       <h3>Bot 1</h3>
-      <div class="items"></div>
+      <div class="items">Virus de l'Immuno-déficience Humaine</div>
       <div class="items"></div>
     </div>
     <div class="cards tree">
       <h3>Bot 2</h3>
-      <div class="items"></div>
+      <div class="items">virus de l'infidélité Humaine</div>
       <div class="items"></div>
     </div>
     <div class="cards forrrr">
       <h3>Bot 3</h3>
-      <div class="items"></div>
+      <div class="items">Variation de l'Immuno-Déficience
+      Habituelle</div>
       <div class="items"></div>
     </div>
 
@@ -233,7 +234,9 @@ export default {
 .second .items,
 .tree .items,
 .forrrr .items {
+  padding: 20px;
   transform: translateY(25%);
+  color: #005baa;
 }
 
 .second .items:hover,
