@@ -34,13 +34,15 @@
     </div>
     <div class="time">
       <img src="../assets/horoge.png" alt="time">
-      <h2>Temps restant : 1:30</h2>
+      <h2>Temps restant : {{(Math.round(compteur/60) + " min " + Math.round(compteur%60))}} </h2>
     </div>
     <div class="param">
       <img src="../assets/parametres.png" alt="param" />
     </div>
     <div class="logo">
-      <img src="../assets/logoph.png" alt="logoph" />
+      <a @click="back">
+        <img src="../assets/logoph.png" alt="logo" />
+      </a>
     </div>
   </div>
 </template>
@@ -54,6 +56,9 @@ export default {
     };
   },
   methods: {
+    back: function back() {
+      document.getElementById("app").style.transform = "translateX(0vw)";
+    },
     comptdown() {
       let timer = setInterval(() => {
         this.compteur--;
@@ -262,6 +267,20 @@ export default {
   width: 100%;
   text-align: center;
 }
+
+.param:hover img {
+  animation: tourne 0.4s ease infinite;
+}
+
+@keyframes tourne {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 </style>
 
 
