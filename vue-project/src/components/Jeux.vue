@@ -34,7 +34,13 @@
     </div>
     <div class="time">
       <img src="../assets/horoge.png" alt="time">
-      <h2 id="time">Temps restant : {{Math.round(compteur / 60) + " min " + Math.round(compteur % 60)}}</h2>
+      <h2>Temps restant : 1:30</h2>
+    </div>
+    <div class="param">
+      <img src="../assets/parametres.png" alt="param" />
+    </div>
+    <div class="logo">
+      <img src="../assets/logoph.png" alt="logoph" />
     </div>
   </div>
 </template>
@@ -67,11 +73,27 @@ export default {
 </script>
 
 <style>
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  margin: 20px;
+}
+
+.param img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .jeux {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #005BAA;
+  background-color: #005baa;
 }
 
 .cards {
@@ -83,7 +105,7 @@ export default {
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: #7C96BC;
+  background-color: #7c96bc;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -95,7 +117,7 @@ export default {
   height: 180px;
   border-radius: 20px;
   padding: 10px;
-  background-color: #F7D1CD;
+  background-color: #f7d1cd;
   transition: all 0.3s ease-in-out;
 }
 
@@ -104,7 +126,7 @@ export default {
 }
 
 .cards .items p {
-  color: #296FB0;
+  color: #296fb0;
   font-size: 12px;
   font-weight: 600;
 }
@@ -116,7 +138,7 @@ export default {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background-color: #5282B6;
+  background-color: #5282b6;
   transform: translate(-50%, -50%);
 }
 
@@ -127,7 +149,7 @@ export default {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-color: #005BAA;
+  background-color: #005baa;
   transform: translate(-50%, -50%);
 }
 
@@ -138,7 +160,7 @@ export default {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: #5282B6;
+  background-color: #5282b6;
   transform: translate(-50%, -50%);
 }
 
@@ -149,7 +171,7 @@ export default {
   width: 300px;
   height: 30px;
   border-radius: 20px;
-  background-color: #5282B6;
+  background-color: #5282b6;
   transform: translateY(-50%);
 }
 
@@ -157,7 +179,7 @@ export default {
   width: 150px;
   height: 30px;
   border-radius: 20px;
-  background-color: #F7D1CD;
+  background-color: #f7d1cd;
   transition: all 0.3s ease-in-out;
 }
 
@@ -166,7 +188,7 @@ export default {
   top: -40px;
   transform: translateX(-50%);
   position: absolute;
-  color: #F7D1CD;
+  color: #f7d1cd;
   font-size: 15px;
   font-weight: 700;
   width: 100%;
@@ -192,7 +214,9 @@ export default {
   height: 40px;
 }
 
-.second, .tree, .forrrr {
+.second,
+.tree,
+.forrrr {
   position: absolute;
   z-index: 9;
   top: 50px;
@@ -201,11 +225,15 @@ export default {
   border-radius: 20px;
 }
 
-.second .items, .tree .items, .forrrr .items {
+.second .items,
+.tree .items,
+.forrrr .items {
   transform: translateY(25%);
 }
 
-.second .items:hover, .tree .items:hover, .forrrr .items:hover {
+.second .items:hover,
+.tree .items:hover,
+.forrrr .items:hover {
   transform: translateY(50px) scale(1);
 }
 
@@ -221,18 +249,19 @@ export default {
   transform: translateX(-100px) scale(0.5) rotate(-30deg);
 }
 
-.second h3, .tree h3, .forrrr h3 {
+.second h3,
+.tree h3,
+.forrrr h3 {
   position: absolute;
   top: -80px;
   left: 50%;
   transform: translateX(-50%);
-  color: #F7D1CD;
+  color: #f7d1cd;
   font-size: 40px;
   font-weight: 700;
   width: 100%;
   text-align: center;
 }
-
 </style>
 
 
