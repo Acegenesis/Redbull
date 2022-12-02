@@ -22,7 +22,7 @@ body {
 
 #app {
   font-weight: normal;
-  width: 200%;
+  width: 300%;
   height: 100%;
   transition: transform 1s ease-in;
 }

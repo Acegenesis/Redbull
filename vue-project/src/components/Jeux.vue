@@ -63,7 +63,7 @@ export default {
       let timer = setInterval(() => {
         this.compteur--;
         if (this.compteur === 0) {
-          clearInterval(this.compteur);
+          stop()
         }
       }, 1000);
     },
@@ -269,7 +269,7 @@ export default {
 }
 
 .param:hover img {
-  animation: tourne 0.4s ease infinite;
+  animation: tourne 0.4s ease-in-out infinite;
 }
 
 @keyframes tourne {

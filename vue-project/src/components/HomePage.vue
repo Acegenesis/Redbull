@@ -7,11 +7,12 @@
       <a @click="slide">Jouer</a>
     </div>
     <div class="home-page__button connection">
-      <a>Connexion</a>
+      <a @click="connect">Connexion</a>
     </div> 
     <audio id="audio" controls style="visibility: hidden;">
       <source src="../assets/sounds/pornhub.mp3" type="audio/mpeg" />
     </audio>
+    
   </div>
 
 </template>
@@ -27,12 +28,14 @@ export default {
     },
     slide: function slide() {
       document.getElementById("app").style.transform = "translateX(-100vw)";
+    },
+    connect: function connect() {
+      document.getElementById("app").style.transform = "translateX(-200vw)";
     }
+
   }
 
 };
-
-
 
 </script>
 
