@@ -13,14 +13,17 @@
       <div class="items"></div>
     </div>
     <div class="cards second">
+      <h3>Bot 1</h3>
       <div class="items"></div>
       <div class="items"></div>
     </div>
     <div class="cards tree">
+      <h3>Bot 2</h3>
       <div class="items"></div>
       <div class="items"></div>
     </div>
     <div class="cards forrrr">
+      <h3>Bot 3</h3>
       <div class="items"></div>
       <div class="items"></div>
     </div>
@@ -166,6 +169,47 @@ export default {
 .time img {
   width: 40px;
   height: 40px;
+}
+
+.second, .tree, .forrrr {
+  position: absolute;
+  z-index: 9;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.5);
+  border-radius: 20px;
+}
+
+.second .items, .tree .items, .forrrr .items {
+  transform: translateY(25%);
+}
+
+.second .items:hover, .tree .items:hover, .forrrr .items:hover {
+  transform: translateY(50px) scale(1);
+}
+
+.tree {
+  top: 170px;
+  right: 0px;
+  transform: translateX(100px) scale(0.5) rotate(30deg);
+}
+
+.forrrr {
+  top: 170px;
+  left: 0px;
+  transform: translateX(-100px) scale(0.5) rotate(-30deg);
+}
+
+.second h3, .tree h3, .forrrr h3 {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #F7D1CD;
+  font-size: 40px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
 }
 
 </style>
