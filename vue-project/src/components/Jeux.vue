@@ -1,8 +1,7 @@
 <template>
   <div class="jeux">
-    <div class="cards my-cards">
-
-    </div>
+    <div class="Background"></div>
+    <div class="cards my-cards"></div>
   </div>
 </template>
 
@@ -28,6 +27,16 @@ export default {
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: #7C96BC;
+  background-color: #7c96bc;
+}
+
+.Background {
+  /* carré de couleur */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #005baa;
 }
 </style>
