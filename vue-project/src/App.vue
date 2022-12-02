@@ -15,6 +15,7 @@ import Jeux from "./components/Jeux.vue";
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200vw;
+  width: 100%;
+  height: 100%;
 }
 </style>
