@@ -20,6 +20,7 @@
       <img src="../assets/horoge.png" alt="time">
       <h2>Temps restant : 1:30</h2>
     </div>
+    <div class="cards my-cards"></div>
   </div>
 </template>
 
@@ -50,6 +51,7 @@ export default {
   display: flex;
   justify-content: center;
   gap: 20px;
+  background-color: #7c96bc;
 }
 
 .cards .items {
