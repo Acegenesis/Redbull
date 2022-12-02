@@ -34,7 +34,7 @@
     </div>
     <div class="time">
       <img src="../assets/horoge.png" alt="time">
-      <h2>Temps restant : 1:30</h2>
+      <h2 id="time">Temps restant : {{Math.round(compteur / 60) + " min " + Math.round(compteur % 60)}}</h2>
     </div>
   </div>
 </template>
@@ -42,7 +42,28 @@
 <script>
 export default {
   name: "JeuxPage",
+  data() {
+    return {
+      compteur: 300,
+    };
+  },
+  methods: {
+    comptdown() {
+      let timer = setInterval(() => {
+        this.compteur--;
+        if (this.compteur === 0) {
+          clearInterval(this.compteur);
+        }
+      }, 1000);
+    },
+  },
+  created() {
+    this.comptdown();
+  },
+
 };
+
+
 </script>
 
 <style>
@@ -162,8 +183,8 @@ export default {
   transform: translateY(-50%);
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
+  font-size: 13px;
 }
 
 .time img {
@@ -213,3 +234,5 @@ export default {
 }
 
 </style>
+
+
