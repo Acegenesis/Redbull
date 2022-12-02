@@ -12,6 +12,19 @@
       <div class="items"></div>
       <div class="items"></div>
     </div>
+    <div class="cards second">
+      <div class="items"></div>
+      <div class="items"></div>
+    </div>
+    <div class="cards tree">
+      <div class="items"></div>
+      <div class="items"></div>
+    </div>
+    <div class="cards forrrr">
+      <div class="items"></div>
+      <div class="items"></div>
+    </div>
+
     <div class="progress">
       <h2>Mort due aux MST 45%</h2>
       <div class="progress-bar"></div>
@@ -20,7 +33,6 @@
       <img src="../assets/horoge.png" alt="time">
       <h2>Temps restant : 1:30</h2>
     </div>
-    <div class="cards second"></div>
   </div>
 </template>
 
@@ -154,10 +166,6 @@ export default {
 .time img {
   width: 40px;
   height: 40px;
-}
-
-.second {
-  
 }
 
 </style>
