@@ -39,6 +39,9 @@
     <div class="param">
       <img src="../assets/parametres.png" alt="param" />
     </div>
+    <div class="logo">
+      <img src="../assets/logoph.png" alt="logoph" />
+    </div>
   </div>
 </template>
 
@@ -49,6 +52,14 @@ export default {
 </script>
 
 <style>
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  margin: 20px;
+}
+
 .param img {
   width: 90px;
   height: 90px;
