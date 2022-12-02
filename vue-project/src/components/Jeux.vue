@@ -3,7 +3,7 @@
     <div class="circle1"></div>
     <div class="circle2"></div>
     <div class="circle3"></div>
-    <div class="cards my-cards">
+    <div class="cards">
       <div class="items">
         <p>Nice coock bro</p>
       </div>
@@ -20,7 +20,7 @@
       <img src="../assets/horoge.png" alt="time">
       <h2>Temps restant : 1:30</h2>
     </div>
-    <div class="cards my-cards"></div>
+    <div class="cards second"></div>
   </div>
 </template>
 
@@ -51,7 +51,6 @@ export default {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #7c96bc;
 }
 
 .cards .items {
@@ -157,5 +156,8 @@ export default {
   height: 40px;
 }
 
+.second {
+  
+}
 
 </style>
